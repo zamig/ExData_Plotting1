@@ -18,5 +18,5 @@ dates <- strptime(paste(powerData$Date, powerData$Time), "%d/%m/%Y %H:%M:%S")
 png(filename = "plot2.png")
 par(bg = NA)
 plot(dates, powerData$Global_active_power, type = "l", xlab = "",
-     ylab = "Global Active Power (kilowatts)", lwd = 0.07)
+     ylab = "Global Active Power (kilowatts)", lwd = 0.8)
 dev.off()
